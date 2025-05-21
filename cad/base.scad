@@ -239,7 +239,7 @@ module base_plate()
             cube(13);
 
         
-        translate([2.6, 55, 6])
+        translate([2, 55, 6])
             rotate([0, 0, 180])
                 esp32(3, false);
         
@@ -364,7 +364,7 @@ module lid()
         translate([plate_length /2 + 5 ,18 , plate_thickness  ])
             rotate([0, 0, 90])
                 load_cell(false, false);
-        translate([2, 55, 6])
+        translate([border_thickness, 55, 6])
             rotate([0, 0, 180])
                 esp32(3, false, 1.8);
         
